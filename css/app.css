@@ -37,6 +37,8 @@ body {
   .box__title:hover {
     transition: all 0.7s; }
   .box img {
+    width: 256px;
+    width: 256px;
     border-radius: 100%; }
 
 a {

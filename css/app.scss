@@ -34,6 +34,8 @@ body {
     transition: all $transition-duration;
   }
   & img{
+    width: 256px;
+    height: 256px;
     border-radius: 100%;
   }
 }
