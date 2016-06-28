@@ -9,10 +9,11 @@ body {
   padding: 0;
   width: 100%;
   display: table;
-  font-weight: 100;
-  font-family: 'Lato';
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
   color: #999;
   background: #eee;
+  @include noselect;
 }
 
 .box {
@@ -26,6 +27,7 @@ body {
   }
   &__title {
     font-size: 6rem;
+    font-weight: 100;
 
   }
   &__title:hover {
@@ -36,6 +38,7 @@ body {
 a {
   text-decoration: dotted;
   color: #999;
+  font-weight: 400;
 
   &.button {
     display: inline-block;
