@@ -12,7 +12,7 @@ body {
   font-weight: 100;
   font-family: 'Lato';
   color: #999;
-  background: #000;
+  background: #eee;
 }
 
 .box {
@@ -36,30 +36,31 @@ body {
 a {
   text-decoration: dotted;
   color: #999;
+
+  &.button {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+
+    &:hover {
+      width: 200px;
+    }
+  }
 }
 
-a.button {
-  display: inline-block;
-  text-decoration: none;
-  line-height: 50px;
+.button-primary {
+  border: none;
   font-size: 1rem;
   color: #fff;
-  margin-top: 20px;
-  width: 150px;
-  height: 50px;
-  border: 1px solid #fff;
   border-radius: 25px;
   transition: all 0.5s;
   @include gradient(#52edc7, #5ac8fb);
-
-
-}
-
-a.button:hover {
-  width: 200px;
 }
 
 .fader {
   display: table-cell;
-  @include fadIn(2s);
+  @include fadeIn(2s);
 }

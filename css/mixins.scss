@@ -15,7 +15,7 @@
   background-image: -o-linear-gradient($from, $to);
 }
 
-@mixin fadIn($duration) {
+@mixin fadeIn($duration) {
 
   -webkit-animation: fadein $duration; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein $duration; /* Firefox < 16 */

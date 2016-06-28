@@ -9,7 +9,7 @@ body {
   font-weight: 100;
   font-family: 'Lato';
   color: #999;
-  background: #000; }
+  background: #eee; }
 
 .box {
   display: none;
@@ -26,17 +26,20 @@ body {
 a {
   text-decoration: dotted;
   color: #999; }
+  a.button {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px; }
+    a.button:hover {
+      width: 200px; }
 
-a.button {
-  display: inline-block;
-  text-decoration: none;
-  line-height: 50px;
+.button-primary {
+  border: none;
   font-size: 1rem;
   color: #fff;
-  margin-top: 20px;
-  width: 150px;
-  height: 50px;
-  border: 1px solid #fff;
   border-radius: 25px;
   transition: all 0.5s;
   /* fallback/image non-cover color */
@@ -49,9 +52,6 @@ a.button {
   background-image: -webkit-linear-gradient(#52edc7, #5ac8fb);
   /* Opera 11.10+ */
   background-image: -o-linear-gradient(#52edc7, #5ac8fb); }
-
-a.button:hover {
-  width: 200px; }
 
 .fader {
   display: table-cell;
