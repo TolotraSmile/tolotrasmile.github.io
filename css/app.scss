@@ -11,7 +11,7 @@ body {
   display: table;
   font-weight: 300;
   font-family: 'Lato', sans-serif;
-  color: #999;
+  color: $gray-color;
   background: #eee;
   @include noselect;
 }
@@ -31,13 +31,13 @@ body {
 
   }
   &__title:hover {
-    transition: all 0.5s;
+    transition: all $transition-duration;
   }
 }
 
 a {
   text-decoration: dotted;
-  color: #999;
+  color: $gray-color;
   font-weight: 400;
 
   &.button {
@@ -59,11 +59,60 @@ a {
   font-size: 1rem;
   color: #fff;
   border-radius: 25px;
-  transition: all 0.5s;
+  transition: all $transition-duration;
   @include gradient(#52edc7, #5ac8fb);
 }
 
 .fader {
   display: table-cell;
   @include fadeIn(2s);
+}
+
+.footer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  height: $social-icon-size;
+  padding: 10px 0 10px 10px;
+  text-align: right;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  & li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 10px;
+    line-height: $social-icon-size;
+    text-align: center;
+    border-radius: 4px;
+
+    & a {
+      &.twitter:hover {
+        background-color: #55acee;
+      }
+      &.facebook:hover {
+        background-color: #3b5998;
+      }
+      &.behance:hover {
+        background-color: #1769ff;
+      }
+      &.dribbble:hover {
+        background-color: #ea4c89;
+      }
+    }
+  }
+  & a.share {
+    margin: 0;
+    padding: 0;
+    width: $social-icon-size;
+    height: $social-icon-size;
+    background-color: $gray-color;
+    border-radius: 3px;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    transition: background $transition-duration;
+  }
 }
