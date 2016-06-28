@@ -7,7 +7,7 @@ body {
   width: 100%;
   display: table;
   font-weight: 100;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   background: #52edc7;
   background: -moz-linear-gradient(top, #52edc7 0%, #5ac8fb 100%);
   /* FF3.6-15 */
