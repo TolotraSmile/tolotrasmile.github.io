@@ -12,7 +12,7 @@ body {
   font-weight: 300;
   font-family: 'Lato', sans-serif;
   color: $gray-color;
-  background: #eee;
+  background: rgb(238, 238, 238);
   @include noselect;
 }
 
@@ -32,6 +32,9 @@ body {
   }
   &__title:hover {
     transition: all $transition-duration;
+  }
+  & img{
+    border-radius: 100%;
   }
 }
 
@@ -57,10 +60,10 @@ a {
 .button-primary {
   border: none;
   font-size: 1rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   border-radius: 25px;
   transition: all $transition-duration;
-  @include gradient(#52edc7, #5ac8fb);
+  @include gradient(rgb(82, 237, 199), rgb(90, 200, 251));
 }
 
 .fader {
@@ -89,16 +92,16 @@ a {
 
     & a {
       &.twitter:hover {
-        background-color: #55acee;
+        background-color: rgb(85, 172, 238);
       }
       &.facebook:hover {
-        background-color: #3b5998;
+        background-color: rgb(59, 89, 152);
       }
       &.behance:hover {
-        background-color: #1769ff;
+        background-color: rgb(23, 105, 255);
       }
       &.dribbble:hover {
-        background-color: #ea4c89;
+        background-color: rgb(234, 76, 137);
       }
     }
   }
@@ -112,7 +115,7 @@ a {
     font-size: 22px;
     display: block;
     text-align: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
     transition: background $transition-duration;
   }
 }
