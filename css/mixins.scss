@@ -1,6 +1,6 @@
 $social-icon-size: 48px;
-$gray-color: rgb(153, 153, 153);
-$transition-duration: 0.7s;
+$back-color: rgb(200, 200, 200);
+$transition-duration: .7s;
 
 @mixin gradient($from, $to) {
   /* fallback/image non-cover color */
@@ -30,7 +30,7 @@ $transition-duration: 0.7s;
                          not supported by any browser */
 }
 
-@mixin fadeIn($duration) {
+@mixin fadein($duration) {
 
   -webkit-animation: fadein $duration; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein $duration; /* Firefox < 16 */
