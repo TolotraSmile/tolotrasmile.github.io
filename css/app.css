@@ -131,13 +131,13 @@ a {
     list-style: none;
     margin-right: 10px;
     text-align: center; }
-  .footer a .twitter:hover {
+  .footer .twitter:hover {
     background-color: #55acee; }
-  .footer a .facebook:hover {
+  .footer .facebook:hover {
     background-color: #3b5998; }
-  .footer a .behance:hover {
+  .footer .behance:hover {
     background-color: #1769ff; }
-  .footer a .dribbble:hover {
+  .footer .dribbble:hover {
     background-color: #ea4c89; }
   .footer .share {
     background-color: #c8c8c8;
