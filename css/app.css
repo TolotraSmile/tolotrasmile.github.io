@@ -17,7 +17,7 @@ body {
   /* Non-prefixed version, currently
                          not supported by any browser */
   background: white;
-  color: #c8c8c8;
+  color: white;
   display: table;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
@@ -43,7 +43,7 @@ body {
     width: 256px; }
 
 a {
-  color: #c8c8c8;
+  color: white;
   font-weight: 300;
   text-decoration: dotted; }
   a.button {
@@ -140,7 +140,7 @@ a {
   .footer .dribbble:hover {
     background-color: #ea4c89; }
   .footer .share {
-    background-color: #c8c8c8;
+    background-color: white;
     border-radius: 3px;
     color: white;
     display: block;
