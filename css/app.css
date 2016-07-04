@@ -33,7 +33,7 @@ body {
     display: inline-block;
     text-align: center; }
   .box__title {
-    font-size: 6rem;
+    font-size: 40px;
     font-weight: 100; }
   .box__title:hover {
     transition: all 0.7s; }
