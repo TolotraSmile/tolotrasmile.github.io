@@ -1,5 +1,6 @@
 $social-icon-size: 48px;
-$back-color: rgb(200, 200, 200);
+$black-color: rgb(0, 0, 0);
+$gray-color: rgb(200, 200, 200);
 $transition-duration: .7s;
 
 @mixin gradient($from, $to) {
@@ -17,6 +18,16 @@ $transition-duration: .7s;
 
   /* Opera 11.10+ */
   background-image: -o-linear-gradient($from, $to);
+}
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
 }
 
 @mixin noselect {

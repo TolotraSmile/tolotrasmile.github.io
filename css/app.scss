@@ -8,13 +8,14 @@ body {
 body {
   @include noselect;
   background: rgb(255, 255, 255);
-  color: $back-color;
+  color: $gray-color;
   display: table;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   margin: 0;
   padding: 0;
   width: 100%;
+  @include font-smoothing(antialiased);
 }
 
 .box {
@@ -28,8 +29,9 @@ body {
   }
 
   &__title {
-    font-size: 40px;
+    font-size: 6em;
     font-weight: 100;
+    font-family: 'Lato', sans-serif;
   }
 
   &__title:hover {
@@ -44,7 +46,7 @@ body {
 }
 
 a {
-  color: $back-color;
+  color: $black-color;
   font-weight: 300;
   text-decoration: dotted;
 
@@ -117,7 +119,7 @@ a {
   }
 
   .share {
-    background-color: $back-color;
+    background-color: $gray-color;
     border-radius: 3px;
     color: rgb(255, 255, 255);
     display: block;
